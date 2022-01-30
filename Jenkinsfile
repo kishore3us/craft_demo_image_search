@@ -3,8 +3,8 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-                sh "env"
-                //sh "sudo npm run build"
+                sh "npm install"
+                sh "npm run build"
             }
         }
     }
