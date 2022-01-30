@@ -3,7 +3,7 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-                sh "sudo echo 'Hello World'"
+                sh "env"
                 //sh "sudo npm run build"
             }
         }
