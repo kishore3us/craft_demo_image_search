@@ -4,8 +4,8 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-                sh "npm install"
-                sh "CI='' npm run build"
+                sh "docker build . -t jenkins/craftDemo"
+                //sh "CI='' npm run build"
                 sh 'echo "Hello World"'
             }
         }
