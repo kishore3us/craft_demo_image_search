@@ -12,7 +12,7 @@ pipeline {
         stage("JEST Test") {
                     steps {
 
-                        sh 'echo "Test Pass"'
+                        ssh "CI='' npm test"
              }
         }
 
