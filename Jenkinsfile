@@ -9,5 +9,11 @@ pipeline {
                 sh 'echo "Hello World"'
             }
         }
+        stage("Test") {
+                    steps {
+
+                        sh 'echo "Test Pass"'
+             }
+        }
     }
 }
