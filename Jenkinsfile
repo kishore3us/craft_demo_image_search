@@ -9,10 +9,10 @@ pipeline {
                 sh 'echo "Hello World"'
             }
         }
-        stage("JEST Test") {
+        stage("Test") {
                     steps {
 
-                        ssh "CI='' npm test"
+                        sh "CI='' npm test"
              }
         }
 
