@@ -16,10 +16,10 @@ pipeline {
              }
         }
 
-        stage("push") {
+        stage("Publish") {
                             steps {
 
-                                sh 'echo "Hello Tests"'
+                                sh 'echo "Hello Publish"'
                      }
                 }
 
