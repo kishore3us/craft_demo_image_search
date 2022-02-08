@@ -1,11 +1,11 @@
 pipeline {
      agent any
-    // tools {docker "DOCKER"}
+     tools {nodejs "nodejs"}
      stages {
         stage("Build") {
             steps {
-                sh "docker build . -t jenkins/craftDemo"
-                //sh "CI='' npm run build"
+                sh "npm install"
+                sh "CI='' npm run build"
                 sh 'echo "Hello World"'
             }
         }
