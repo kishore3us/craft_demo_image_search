@@ -9,11 +9,18 @@ pipeline {
                 sh 'echo "Hello World"'
             }
         }
-        stage("Test") {
+        stage("JEST Test") {
                     steps {
 
                         sh 'echo "Test Pass"'
              }
         }
+
+        stage("JEST Test") {
+                            steps {
+
+                                sh 'echo "Test Pass"'
+                     }
+                }
     }
 }
