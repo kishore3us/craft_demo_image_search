@@ -12,9 +12,16 @@ pipeline {
         stage("Test") {
                     steps {
 
-                        sh "CI='' npm test"
+                        sh "npm test"
              }
         }
+
+        stage("push") {
+                            steps {
+
+                                sh 'echo "Hello Tests"'
+                     }
+                }
 
     }
 }
