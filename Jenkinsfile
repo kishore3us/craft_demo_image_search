@@ -16,11 +16,5 @@ pipeline {
              }
         }
 
-        stage("JEST Test") {
-                            steps {
-
-                                sh 'echo "Test Pass"'
-                     }
-                }
     }
 }
